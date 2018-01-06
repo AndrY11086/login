@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.*;
 import com.example.valentina.login.AccountActivity.LoginActivity;
 import com.example.valentina.login.AccountActivity.SignupActivity;
+import com.example.valentina.login.AllenamentoCorsa.CorsaActivity;
 import com.firebaseloginapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -208,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
                 if (user == null) {
                     // user auth state is changed - user is null
                     // launch login activity
-                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                    startActivity(new Intent(MainActivity.this, CorsaActivity.class));
                     finish();
                 }
             }
